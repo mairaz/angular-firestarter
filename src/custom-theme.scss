@@ -53,19 +53,27 @@ $custom-orange: (
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$kanban-project-theme-primary: mat-palette($custom-orange);
-$kanban-project-theme-accent: mat-palette($mat-green, A200, A100, A400);
+$firestarter-primary: mat-palette($custom-orange);
+$firestarter-accent: mat-palette($mat-green, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$kanban-project-theme-warn: mat-palette($mat-red);
+$firestarter-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$kanban-project-theme-theme: mat-dark-theme($kanban-project-theme-primary, $kanban-project-theme-accent, $kanban-project-theme-warn);
+$firestarter-theme: mat-dark-theme($firestarter-primary, $firestarter-accent, $firestarter-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($kanban-project-theme-theme);
+@include angular-material-theme($firestarter-theme);
 
 /* You can add global styles to this file, and also import other style files */
 
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: sofia-pro, sans-serif; }
+a {
+    color: white;
+    text-decoration: none;
+}
